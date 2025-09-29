@@ -10,6 +10,7 @@ import Estatisticas from './Estatisticas.tsx';
 import RefeicaoIndividual from './RefeicaoIndividual.tsx';
 import Refeicao from './Refeicao.tsx';
 import Header from '../components/Header.tsx';
+import BoaRefeicao from './BoaRefeicao.tsx';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
    {
     path: "/refeicao",
     element: <Refeicao/>
+  },
+  {
+    path: "/boaRefeicao",
+    element: <BoaRefeicao/>
   },
 ]);
 

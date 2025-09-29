@@ -2,7 +2,7 @@ import { Plus } from "lucide-react";
 
 export default function SimpleButton({ text, action }: { text: string, action: boolean }) {
     return (
-        <div className="bg-gray-700 p-4 w-48 md:w-72 flex justify-center items-center rounded-md gap-3">
+        <div className="bg-gray-700 p-4 w-48 md:w-72 flex justify-center items-center rounded-md gap-3 cursor-pointer">
             {
                 action && <Plus color="white"/>
             }
