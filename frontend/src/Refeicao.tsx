@@ -34,7 +34,7 @@ export default function Refeicao() {
                     <div className="flex flex-col w-full gap-2">
                         <label>Está dentro da dieta?</label>
                         <div className="flex justify-center items-center gap-8">
-                            <button className={`w-50 flex justify-center items-center gap-2 border-2 ${selectDiet === 'god' ? "border-green-600" : "border-none"} p-2 rounded-md bg-gray-200 cursor-pointer`} onClick={() => setSelectDiet('god')} type="button"> 
+                            <button className={`w-50 flex justify-center items-center gap-2 border-2 ${selectDiet === 'good' ? "border-green-600" : "border-none"} p-2 rounded-md bg-gray-200 cursor-pointer`} onClick={() => setSelectDiet('good')} type="button"> 
                                 <div className="w-3 h-3 rounded-full bg-green-700"></div>
                                 Sim 
                             </button>
