@@ -48,7 +48,7 @@ export default function Refeicao() {
                 </div>
 
                 <div className="flex justify-center items-center ">
-                    <CreateNewMeal />
+                    <CreateNewMeal selectDiet={selectDiet}/>
                 </div>
             </form>
         </div>
