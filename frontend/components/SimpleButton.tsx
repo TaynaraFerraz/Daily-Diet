@@ -1,10 +1,12 @@
-import { Plus } from "lucide-react";
+import { PenLine, Plus, Trash } from "lucide-react";
 
-export default function SimpleButton({ text, action }: { text: string, action: boolean }) {
+export default function SimpleButton({ text, action }: { text: string, action?: string }) {
     return (
-        <div className="bg-gray-700 p-4 w-48 md:w-72 flex justify-center items-center rounded-md gap-3 cursor-pointer">
+        <div className="bg-gray-700 py-4 px-14 w-fit flex justify-center items-center rounded-md gap-3 cursor-pointer">
             {
-                action && <Plus color="white"/>
+                action == 'plus' && <Plus color="white"/> ||
+                action == 'edit' && <PenLine color="white" /> ||
+                action == 'delete' && <Trash color="white" />
             }
             <p className="text-white text-sm md:text-lg">{text}</p>
         </div>

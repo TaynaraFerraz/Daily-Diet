@@ -12,6 +12,7 @@ import Refeicao from './Refeicao.tsx';
 import Header from '../components/Header.tsx';
 import BoaRefeicao from './BoaRefeicao.tsx';
 import MaRefeicao from './MaRefeicao.tsx';
+import EditarRefeicao from './EditarRefeicao.tsx';
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
   {
     path: "/maRefeicao",
     element: <MaRefeicao/>
+  },
+  {
+    path: "/editarRefeicao",
+    element: <EditarRefeicao/>
   },
 ]);
 
